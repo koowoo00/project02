@@ -1,0 +1,76 @@
+@import url(https://qwerewqwerew.github.io/source/style/reset.css);
+:root {
+  --white_100: #ffffff;
+  --black_100: #000000;
+  --gray_100: #393939;
+  --ligray_100: #dddddd;
+  --ligray_200: #dbdbdb;
+  --ligray_300: #a2a2a2;
+  --ligray_400: #999999;
+  --dkgray_100: #393939;
+  --dkgray_200: #494949;
+  --dkgray_300: #555555;
+  --blue_100: #0000ee;
+  --pupl_100: #551a8b;
+}
+
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.df {
+  display: flex;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 7.9rem;
+}
+.inner {
+  width: 100%;
+  max-width: var(--layout);
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: #fff;
+}
+
+section {
+  background-color: #ddd;
+}
+section:nth-child(odd) {
+  background-color: #555;
+}
+.wrap > *,
+section {
+  min-height: 500px;
+}
+.inner {
+  padding: 6% 4vw;
+  background-color: #fff;
+  height: inherit;
+}
+
+section .inner {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+section.keyVisual {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+section.inner .card {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 1rem;
+  row-gap: 2rem;
+  background: var(--ligray_200);
+}
